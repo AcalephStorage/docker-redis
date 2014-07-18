@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Acaleph <admin@acale.ph>
 
-RUN apt-get update -qq && apt-get install -y python-software-properties sudo
+RUN apt-get update -qq && apt-get install -y software-properties-common sudo
 
 RUN apt-add-repository -y ppa:chris-lea/redis-server
 RUN apt-get update -qq && apt-get install -y redis-server=2:2.8.*
