@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:trusty
 MAINTAINER Acaleph <admin@acale.ph>
 
 RUN apt-get update -qq && apt-get install -y python-software-properties sudo
